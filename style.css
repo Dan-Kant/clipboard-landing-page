@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --clr-dark-grayish-blue: hsl(210, 10%, 33%);
+    --clr-grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./images/bg-header-mobile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Bai Jamjuree', sans-serif;
+    overflow-x: hidden;
+}
+
+@media (min-width: 50em) {
+    body {
+        background-image: url("./images/bg-header-desktop.png");
+    }
+
+    p {
+        margin: 0 20rem;
+    }
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-block {
+    margin: 6rem 0 3rem 0;
+}
+
+.logo-block img {
+    width: 6rem;
+    height: 6rem;
+}
+
+h1 {
+    color: var(--clr-dark-grayish-blue);
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.8rem;
+}
+
+p {
+    color: var(--clr-grayish-blue);
+    padding: 0 1rem 2.5rem 1rem;
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 50em) {
+    .buttons {
+        flex-direction: row;
+    }
+}
+
+.btn-ios {
+    width: 16rem;
+    height: 3rem;
+    color: white;
+    font-size: 1.005rem;
+    font-family: inherit;
+    font-weight: 600;
+    background-color: var(--strong-cyan);
+    border: none;
+    border-radius: 33px;
+    box-shadow: 0px -2px 0px 1px rgba(0, 0, 0, 0.1) inset;
+    cursor: pointer;
+    transition: 500ms ease;
+}
+
+.btn-mac {
+    width: 16rem;
+    height: 2.9rem;
+    color: white;
+    font-size: 1.005rem;
+    font-family: inherit;
+    font-weight: 600;
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 33px;
+    box-shadow: 0px -2px 0px 1px rgba(0, 0, 0, 0.1) inset;
+    cursor: pointer;
+    margin-bottom: 7rem;
+    transition: 500ms ease;
+}
+
+.btn-ios:hover,
+.btn-mac:hover {
+    opacity: 0.7;
+}
+
+h2 {
+    color: var(--clr-dark-grayish-blue);
+    margin: 0 1rem 1rem 1rem;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+@media (min-width: 50em) {
+
+    .flex-container {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: nowrap;
+    }
+
+    .flex-container img {
+        width: initial !important;
+    }
+
+    .flex-description {
+        margin: 0 20%;
+    }
+
+    .flex-description p {
+        width: 20rem !important;
+        font-size: 18px;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pseudo-flex-description {
+        margin-top: 2rem;
+    }
+}
+
+.flex-container img {
+    width: 80%;
+}
+
+.flex-description {
+    margin-top: 3rem;
+}
+
+.devices-image img {
+    width: 80%;
+    filter: drop-shadow(0px 25px 15px rgba(0, 0, 0, 0.4));
+}
+
+.workflow-heading {
+    margin-top: 4rem;
+}
+
+.info-block-with-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.flex-description-with-icons {
+    width: 19rem;
+}
+
+.flex-description-with-icons img {
+    margin-bottom: 2rem;
+}
+
+.flex-description-with-icons p {
+    margin: 0 1rem;
+}
+
+h3 {
+    color: var(--clr-dark-grayish-blue);
+    margin-bottom: 1rem;
+}
+
+.company-logos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+@media (min-width: 60em) {
+    .company-logos {
+        flex-direction: row;
+        gap: 7rem;
+    }
+}
+
+.company-logos img {
+    margin-top: 3rem;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsla(201, 11%, 66%, 0.2);
+    padding: 3rem;
+}
+
+footer img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 0 2rem 0;
+}
+
+a {
+    text-decoration: none;
+    margin-top: 2rem;
+    color: var(--clr-dark-grayish-blue);
+}
+
+.social-media-icons {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.social-media-icons img {
+    width: 1.97rem;
+    height: 1.8rem;
+}
